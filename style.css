@@ -1,0 +1,102 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 30px;      /* plus d’espace intérieur */
+  text-align: center;
+  max-width: 420px;   /* plus large */
+}
+
+
+.card-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6CC1FF, #0078D4);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 50px;
+  border: none;
+  font-weight: bold;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  gap: 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #0078D4, #005ea0);
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.dropdown {
+  position: absolute;
+  bottom: 35px;      /* distance depuis le bas du cadre */
+  left: 62%;          /* centré horizontalement */
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 50px; /* au-dessus du bouton */
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.dropdown-content a {
+  padding: 6px 12px;      /* réduit le padding */
+  font-size: 12px;         /* texte plus petit */
+  font-weight: normal;      /* moins lourd si tu veux */
+  color: #0078D4;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #f3f3f3;
+  color: #005ea0;
+}
+
+/* afficher le menu au clic */
+.dropdown.show .dropdown-content {
+  display: flex;
+}
+
